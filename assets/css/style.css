@@ -45,11 +45,12 @@ nav ul li a {
 /*into*/
 .into {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 10px auto 30px;
     background-color: #0167af;
     color: #fff;
     padding: 20px 0px;
     border-radius: 10px;
+    width: 90%;  
 }
 .into h1 {
     font-size: 30px;
@@ -199,6 +200,10 @@ nav ul li a {
 }
 
 @media only screen and (max-width: 768px){
+    .into { 
+        width: 100%;
+        border-radius: 0px;
+    }
     .into h1 {
         font-size: 25px;
     }
