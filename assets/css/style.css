@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin-bottom: 30px;
+}
+nav {
+    border-bottom: 1px solid #4d5b771f;
+    box-shadow: 0 5px 6px -3px #11111117;
+    margin-bottom: 20px;
+}
+nav ul {
+    list-style: none;
+    padding: 20px;
+}
+nav ul li a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #85abda;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.ctBranding {
+    margin: 20px 0px;
+}
+.ctBranding h1 {
+    font-size: 34px;
+    font-weight: 600;
+    color: #4d5b77;
+}
+#ct-company {
+    font-size: 15px;
+    font-weight: 400;
+    color: #0069ad;
+}
+/*into*/
+.into {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #0167af;
+    color: #fff;
+    padding: 20px 0px;
+    border-radius: 10px;
+}
+.into h1 {
+    font-size: 30px;
+    word-spacing: 5px;
+}
+.into p{
+    font-size: 17px;
+    color: #d6dadf;
+    font-weight: 500;
+}
+.into img {
+    width: 100px;
+}
+/*notes*/
+.notes {
+    width: 140px;
+    background-color: #ecebf0;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 2px 6px #11111117;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.notes img {
+    padding: 20px 20px 10px;
+    width: 80%;
+}
+.notes a {
+    text-decoration: none;
+    color: #f8f9fa;
+}
+.notes p {
+    padding: 8px;
+    text-align: center;
+    background-color: #161d23;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*takenotes*/
+.takenotes {
+    width: 140px;
+    background-color: #1a4d5e;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 2px 6px #11111117;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.takenotes img {
+    padding: 20px 20px 10px;
+    width: 90%;
+}
+.takenotes a {
+    text-decoration: none;
+    color: #000000;
+}
+.takenotes p {
+    padding: 8px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+}
+.tn-d {
+    display: block;
+}
+/*fd-training*/
+
+.lesson h2 {
+    color: #a37754;
+    font-size: 26px;
+    font-weight: 600;
+    word-spacing: 5px;
+    margin: 10px 0px 8px;
+}
+
+/*Table of content*/
+.table-content {
+    background-color: #3b5d8c1a;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+.table-content p {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+}
+.table-content .toc-list {
+    padding-left: 43px;
+}
+.toc-list ol a {
+    text-decoration: none;
+    list-style-type: decimal-leading-zero;
+    color: #644e40;
+    line-height: 30px;
+    font-weight: 400;
+}
+.generalCard h2 {
+    color: #2c2c2c;
+    margin: 10px 0px 4px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.generalCard {
+    margin-bottom: 25px;
+}
+.generalCard p {
+    font-size: 16px;
+    text-align: left;
+}
+.generalCard textarea {
+    width: 100%;
+    height: 100px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f8f9fa;
+    padding: 20px 0px 20px;
+    margin: 10px 0px;
+    color: #1c262f;
+    font-weight: 400;
+    resize: none;
+}
+.output {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #1c262f98;
+    border-radius: 5px;
+}
+.output img{
+    width: 100%;
+}
+.output p {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 19px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px){
+    .into h1 {
+        font-size: 25px;
+    }
+    .into p {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .into h1 {
+        font-size: 22px;
+    }
+    .into p {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 375px){
+    nav ul li a {
+        font-size: 20px;
+    }
+    .into h1 {
+        font-size: 19px;
+    }
+    .into p {
+        font-size: 14px;
+    }
+    .takenotes {
+        width: 100%;
+        background-color: #1a4d5e;
+        display: block;
+    }
+    .takenotes img {
+        width: 35%;
+    }
+    .tn-d {
+        display: inline-block;
+    }
+        
+}
+
+@media only screen and (max-width: 320px){
+    .into h1 {
+        font-size: 17px;
+    }
+    .into p {
+        font-size: 12px;
+    }
+    .notes {
+        width: 100%;
+        text-align: center;
+    }
+    .notes img {
+        padding: 20px 20px 10px;
+        width: 45%;
+    }
+}
