@@ -201,7 +201,30 @@ nav ul li a {
     letter-spacing: 2px;
     text-decoration: underline;
 }
+.projects {
+    box-shadow: 0px 2px 6px #11111117;
+    width: 30%;
+    padding: 20px;
+}
+.projects img {
+    width: 100%;
+}
 
+.projects h3 {
+    font-size: 20px;
+    margin: 5px 0px 15px;
+    font-weight: 600;
+}
+.projects a {
+    background-color: #567df4;
+    color: #fff;
+    display: block;
+    width: 55%;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 11px;
+    border-radius: 6px;
+}
 @media only screen and (max-width: 768px){
     .into { 
         width: 100%;
@@ -212,6 +235,12 @@ nav ul li a {
     }
     .into p {
         font-size: 16px;
+    }
+    .projects {
+        width: 100%;
+    }
+    .projects a {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 425px){
