@@ -1,0 +1,364 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p,
+span,
+a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+input::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Header*/
+#header {
+  background-color: #35424a;
+  padding: 30px 0px;
+  border-bottom: 3px solid #e8491d;
+}
+/*Website Logo*/
+#brand-logo {
+  float: left;
+}
+#brand-logo a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+#brand-logo .brand-highlight {
+  color: #e8491d;
+  font-weight: bold;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+/*Website Links*/
+nav {
+  float: right;
+  padding-top: 10px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+.nav-active a {
+  color: #e8491d;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #cccccc;
+}
+#header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*Header*/
+#banner-showcase {
+  background-image: url(../images/showcase.jpg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  height: 400px;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+}
+#banner-showcase .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#banner-showcase h1 {
+  font-size: 50px;
+  padding-bottom: 30px;
+  line-height: 50px;
+}
+#banner-showcase p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+main {
+  background-color: #f4f4f4;
+}
+/*Newsletter*/
+#newsletter {
+  background-color: #35424a;
+  color: #fff;
+  padding: 25px 0px;
+}
+#newsletter h2 {
+  font-weight: bold;
+  /* display: inline-block; */
+  float: left;
+  width: 40%;
+  font-size: 20px;
+  margin-top: 10px;
+}
+#newsletter .newsletter-form {
+  /* display: inline-block; */
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+#newsletter::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.newsletter-form input {
+  font-size: 16px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+.newsletter-form input[type="email"] {
+  height: 40px;
+  width: 250px;
+  padding-left: 10px;
+  border: 1px solid #cccccc;
+}
+.newsletter-form input[type="submit"] {
+  background-color: #e8491d;
+  padding: 0px 15px;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*services  Homepage*/
+.card {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+  padding: 25px 0px;
+}
+.card img {
+  width: 80px;
+  height: 80px;
+}
+.card h3 {
+  font-size: 18px;
+  padding: 15px 0px 10px;
+  word-spacing: 4px;
+}
+.card p {
+  line-height: 25px;
+}
+
+/*about us*/
+#about,
+.services-page {
+  padding: 25px 0px;
+  width: 60%;
+  display: inline-block;
+  line-height: 25px;
+  text-align: left;
+}
+#about h2,
+#services h2 {
+  font-size: 2rem;
+  padding-bottom: 25px;
+}
+.col2 {
+  background-color: #35424a;
+  color: #fff;
+  padding: 20px;
+  margin-top: 50px;
+}
+.pages-quote {
+  background-color: #35424a;
+  color: #fff;
+  margin-top: 1.5rem;
+  padding: 30px;
+  width: 33%;
+  float: right;
+  line-height: 25px;
+}
+.pages-quote h3 {
+  font-size: 2rem;
+  padding: 30px 0px;
+}
+
+/*Service Page*/
+#services .col {
+  background-color: #e6e6e6;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+#services .col h3 {
+  font-size: 20px;
+  padding: 20px 0px 15px;
+}
+#services .col p:nth-last-child(1) {
+  padding: 12px 0px 20px;
+}
+#services #quote h3 {
+  font-size: 1.5rem;
+}
+.pages-quote {
+  margin-right: 50px;
+}
+.pages-quote form label {
+  display: block;
+  font-size: 18px;
+  margin-top: 8px;
+}
+.pages-quote form input,
+textarea {
+  display: block;
+  width: 250px;
+  height: 32px;
+  padding-top: 5px;
+  padding-left: 5px;
+  outline: none;
+}
+.pages-quote form textarea {
+  resize: none;
+  height: 50px;
+  margin-bottom: 8px;
+}
+.pages-quote form input[type="submit"] {
+  background-color: #e8491d;
+  color: #fff;
+  width: 110px;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 3px;
+  outline: none;
+  border: unset;
+  cursor: pointer;
+}
+footer {
+  background-color: #e8491d;
+  color: #fff;
+  text-align: center;
+  padding: 34px 0px;
+}
+@media only screen and (max-width: 887px) {
+  #newsletter h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .pages-quote form input,
+  textarea {
+    width: 100%;
+  }
+  #newsletter .newsletter-form {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #brand-logo,
+  nav {
+    width: 100%;
+    text-align: center;
+    float: unset;
+    margin: 5px 0px;
+  }
+  #brand-logo a {
+    font-size: 35px;
+  }
+  #banner-showcase h1 {
+    font-size: 40px;
+    line-height: 70px;
+  }
+  nav ul li a {
+    padding: 10px;
+  }
+  #newsletter h2 {
+    float: unset;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+  }
+  #newsletter .newsletter-form {
+    float: unset;
+    width: 100%;
+    margin: 10px 0px;
+    text-align: center;
+  }
+  .newsletter-form input[type="email"],
+  .newsletter-form input[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .card {
+    width: 100%;
+  }
+  #about,
+  .services-page {
+    width: 100%;
+  }
+  .pages-quote {
+    float: unset;
+    width: 100%;
+    margin: 17px auto;
+  }
+
+  .pages-quote form input,
+  textarea {
+    width: 100%;
+  }
+  .pages-quote form input[type="submit"] {
+    width: 100%;
+  }
+  .service-page {
+    width: 80%;
+  }
+  main {
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #banner-showcase h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  #banner-showcase p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #brand-logo a {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  nav ul li a {
+    line-height: 28px;
+  }
+  #banner-showcase p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  #banner-showcase h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .pages-quote h3 {
+    font-size: 1.7rem;
+    padding: 19px 0px;
+  }
+}

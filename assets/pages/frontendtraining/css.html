@@ -90,7 +90,6 @@
                             <a href="#toc-17">
                                 <li>To add image in list style</li>
                             </a>
-
                             <a href="#toc-18">
                                 <li>Background properties </li>
                             </a>
@@ -147,12 +146,12 @@
                     <div id="card05" class="generalCard">
                         <h2 id="toc-5">We can use colors in css</h2>
                         <p class="toc-p">
-                            <ul>
-                                <li>Color Name: Red,yellow etc</li>
-                                <li>Html5 Color name: Coral etc</li>
-                                <li>Headecimal: #00f00f</li>
-                                <li>RGB: rba(223,334,222</li>
-                            </ul>
+                        <ul>
+                            <li>Color Name: Red,yellow etc</li>
+                            <li>Html5 Color name: Coral etc</li>
+                            <li>Headecimal: #00f00f</li>
+                            <li>RGB: rba(223,334,222</li>
+                        </ul>
 
                         </p>
                     </div>
@@ -166,12 +165,13 @@
                         </p>
 
                         <textarea class=" code-snippet" disabled>
-                            <link type="text/css" rel="stylesheet" href="style.css">
-                            </textarea>
+                            background-color: colorName;
+                            color: colorName;
+                        </textarea>
                     </div>
-                    <div id="card7" class="generalCard">
+                    <div id="card07" class="generalCard">
                         <h2 id="toc-7">To style text use this properties </h2>
-                         <textarea class="code-snippet" disabled>
+                        <textarea class="code-snippet" disabled>
                             font-family (To change font writing)
                             font-size (To change text size)
                             font-weight (To change the thinness for font)
@@ -182,264 +182,203 @@
                             text-align: (to bring text in center,left.right)
                             word-spacing (to give spacing between spaces)list-style: (to style lists) 
                         </textarea>
-                    
+
                     </div>
                     <div id="card08" class="generalCard">
                         <h2 id="toc-8">These are web safe fonts</h2>
                         <p class="toc-p">
-                            We can directly use this font by writing their name we no need to add externally from any third party.
+                            We can directly use this font by writing their name we no need to add externally from any
+                            third party.
                         </p>
                     </div>
                     <div id="card09" class="generalCard">
                         <h2 id="toc-9"> Different between serif and sans serif fonts</h2>
-                       <img src="../../images/css/serif vs sans serif.png" alt= "serif vs sans serif"/>
+                        <img src="../../images/css/serif vs sans serif.png" alt="serif vs sans serif" />
                     </div>
                     <div id="card010" class="generalCard">
-                        <h2 id="toc-10">Inline Element?</h2>
-                        <p class="toc-p">
-                            inline Element mean it will take only required space.
-                        </p>
+                        <h2 id="toc-10">To give space between two lines</h2>
+                        <textarea class="code-snippet" disabled>
+                            line-height: 20px;
+                        </textarea>
                     </div>
-                    <div id="card011" class="generalCard">
-                        <h2 id="toc-11"> Anchor tag?</h2>
+                    <div id="card11" class="generalCard">
+                        <h2 id="toc-11">Different between Id and class</h2>
                         <p class="toc-p">
-                            Anchor tag is use to links other external and internal pages.
-                            Anchor tag can we written as
-                            They are some attributes in link tag or anchor tag they are:-
-                        <ul>
-                            <li>href="#"</li>
-                            <li>target="_blank"</li>
-                            <li>target="_parent"</li>
-                            <li>target="_self"</li>
-                            <li>target="_top"</li>
-                        </ul>
-                        <p>
-                            To learn more about anchor tag refer <a href="https://www.w3schools.com/tags/tag_a.asp"
-                                target="_blank>W3schools.com">W3schools</a>
-                        </p>
+                            Id means it should be unique and it is denoted in css as (#) Class mean it can be multiples
+                            times and it is denoted as (.)
+                            <span id="converToDisplay">Example for Id:</span>
                         </p>
                         <textarea class="code-snippet" disabled>
-                            <a href="www.coalitiontechnologies.com" target="">Link</a>
+                            #idName {
+                                background-color: red;
+                                }
+                                Example for Class:
+                                .className {
+                                Background-color: red;
+                                }                                
                         </textarea>
-                        <div class="output">
-                            <img src="../../images/htmllessons/anchor tag.png" alt="anchor">
-                            <p>output</p>
-                        </div>
                     </div>
-                    <div id="card012" class="generalCard">
-                        <h2 id="toc-12">What is attributes?</h2>
+                    <div id="card12" class="generalCard">
+                        <h2 id="toc-12">Box model</h2>
+                        <img src="../../images/css/box mode.png" alt="box model" />
+                    </div>
+                    <div id="card13" class="generalCard">
+                        <h2 id="toc-13">What is margin and how to use?</h2>
                         <p class="toc-p">
-                            Attribute means they provide special power to element and it is placed within the starting
-                            tag
+                            Margin give outside the element. Margin have four side top, bottom, and right, left.
+                            <span id="#converToDisplay">Example:</span>
                         </p>
 
                         <textarea class="code-snippet" disabled>
-                            <tagname attributename="attribute="attributevalue">Content</tagname>
+                        p{
+                            margin-top: 10px;
+                            margin-right: 10px;
+                            margin-bottom: 10px;
+                            margin-left: 10px;
+                            /*Short hand property*/
+                            Margin: topValue, rightValue, bottomValue, leftValue;
+                            }
                         </textarea>
                     </div>
-                </div>
-                <div id="card013" class="generalCard">
-                    <h2 id="toc-13">Lists?</h2>
-                    <p class="toc-p">
-                        They are three types of list<br>
-                        i) Unorder List<br>
-                        ii) Order list<br>
-                        iii) Description Lists<br>
-                    </p>
+                    <div id="card14" class="generalCard">
+                        <h2 id="toc-14">What is padding and how to use?</h2>
+                        <p class="toc-p">
+                            padding give inside the element. padding have four side top, bottom, and right, left.
+                            <span id="#converToDisplay">Example:</span>
+                        </p>
 
-                    <textarea class="code-snippet" disabled>
-                        i) Unorder List (ul tag)?
-                        <ul>
-                            <li>List Item 1</li>
-                            <li>List Item 2</li>
-                            <li>List Item 3</li>
-                            <li>List Item 4</li>
-                        </ul>
-                    
-                        ii) Order List (ol tag)?
-                        <ol>
-                            <li>List Item 1</li>
-                            <li>List Item 2</li>
-                            <li>List Item 3</li>
-                            <li>List Item 4</li>
-                        </ol>
-
-                        iii) Description Lists (dl tag)?
-                        <dl>
-                            <dt>Name</dt>
-                            <dd>Mohammed Abdul Raheem</dd>
-                            <dt>Company</dt>
-                            <dd>Coalition Technologies</dd>
-                            <dt>Role</dt>
-                            <dd>Frontend Developer</dd>
-                        </dl>
+                        <textarea class="code-snippet" disabled>
+                        p{
+                            padding-top: 10px;
+                            padding-right: 10px;
+                            padding-bottom: 10px;
+                            padding-left: 10px;
+                            /*Short hand property*/
+                            padding: topValue, rightValue, bottomValue, leftValue;
+                            }
+                                               
                         </textarea>
-                    <div class="output">
-                        <img src="../../images/htmllessons/ul tag.png" alt="output">
-                        <img src="../../images/htmllessons/ol tag.png" alt="output">
-                        <img src="../../images/htmllessons/dl tag.png" alt="output">
-                        <p>output</p>
                     </div>
-                </div>
-                <div id="card014" class="generalCard">
-                    <h2 id="toc-14">Tables?</h2>
-                    <p class="toc-p">
-                        Tables are use to display some data like we see in excel
-                    </p>
-
-                    <textarea class="code-snippet" disabled>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>
-                                        Name
-                                    </th>
-                                    <th>
-                                        Company
-                                    </th>
-                                    <th>
-                                        Role
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Amandeep Singh</td>
-                                    <td>Coalition Technologies</td>
-                                    <td>Developer - Team Leader</td>
-                                </tr>
-                                <tr>
-                                    <td>Mohammed Abdul Raheem</td>
-                                    <td>Coalition Technologies</td>
-                                    <td>frontend developer</td>
-                                </tr>
-                            </tbody>
-                        </table>                    
-                        </textarea>
-                    <div class="output">
-                        <img src="../../images/htmllessons/table tag.png" alt="output">
-                        <p>output</p>
-                    </div>
-                </div>
-                <div id="card015" class="generalCard">
-                    <h2 id="toc-15">Div?</h2>
-                    <p class="toc-p">
-                        Div is a opening and closing tag, and it is a block level element and is use in website to make
-                        block. Most of the time we will use div tag to develope websites<br />
-                        div tag example:
-                    </p>
-
-                    <textarea class="code-snippet" disabled>
-                        <div>content</div>
-                        </textarea>
-                </div>
-                <div id="card016" class="generalCard">
-                    <h2 id="toc-16">Forms?</h2>
-                    <p class="toc-p">
-                        Forms are use to submit user data to database.
-                    </p>
-
-                    <textarea class="code-snippet" disabled>
-                        <form action="" method="POST">
-                            <div>
-                                <lable>First Name</lable>
-                                <input type="text" name="" placeholder="First Name">
-                            </div>
-                    
-                            <div>
-                    
-                                <lable>Last Name</lable>
-                                <input type="text" name="" placeholder="Last Name">
-                            </div>
-                    
-                            <div>
-                                <lable>Email</lable>
-                                <input type="email" name="" placeholder="Enter Your Email">
-                            </div>
-                    
-                            <div>
-                                <lable>Message</lable>
-                                &lt;textarea name="message"&gt;&lt;/textarea&gt;
-                            </div>
-                            <div>
-                                <lable>Date</lable>
-                                <input type="date" name="" placeholder="Date of birth">
-                            </div>
-                            <div>
-                                <lable>Gender</lable>
-                                <select>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-                    
-                            <input type="submit" value="Submit">
-                        </form>
-                        </textarea>
-                    <div class="output">
-                        <img src="../../images/htmllessons/form tag.png" alt="output">
-                        <p>output</p>
-                    </div>
-                </div>
-                <div id="card017" class="generalCard">
-                    <h2 id="toc-17">Button tag?</h2>
-                    <p class="toc-p">
-                        It is just like simple button
-                    </p>
-
-                    <textarea class="code-snippet" disabled>
-                        <button>Clikc me<button>
+                    <div id="card15" class="generalCard">
+                        <h2 id="toc-15">Border properties</h2>
+                        <textarea class="code-snippet" disabled>
+                        border-right: 5px red solid;
+                        border-top: 5px red solid;
+                        border-right: 5px red solid;
+                        border-bottom: 5px red solid;
+                        border-left: 5px red solid;
+                        border-width: 3px;
+                        border-bottom-width: 10px;
+                        /*Short hand property*/
+                        border: 5px red solid;
+                        border-radius: 10px;
+                        border-top-right-radius:  10px;
+                        border-bottom-right-radius:  10px;
+                        border-top-left-radius:  10px;
+                        border-bottom-left-radius:  10px;
                     </textarea>
-                    <div class="output">
-                        <img src="../../images/htmllessons/button tag.png" alt="output">
-                        <p>output</p>
                     </div>
-                </div>
-                <div id="card018" class="generalCard">
-                    <h2 id="toc-18">Image tag?</h2>
-                    <p class="toc-p">
-                        To add image into our website we will use image tag. This is a unpaired tag and inline element
-                    <ul>
-                        <li>
-                            src="" :- In "src" give an image file parth name
-                        </li>
-                        <li>
-                            alt :- If our image has not loaded properly on website then this alt attribute will show
-                            text inserd of image.
-                        </li>
-                    </ul>
-                    </p>
+                    <div id="card16" class="generalCard">
+                        <h2 id="toc-16">What is universal selector and how to reset?</h2>
+                        <p class="toc-p">
+                            <span id="#converToDisplay">Universal selector (*)</span>
+                            Reset mean setting marging, padding, other default space to 0 is called reset. To do this
+                        </p>
 
-                    <textarea class="code-snippet" disabled>
-                        <img src="coalition technologies.gif" alt="coalition technologies">
+                        <textarea class="code-snippet" disabled>
+                        *{
+                            Margin: 0px;
+                            Padding 0px;
+                        }                            
                         </textarea>
-                    <div class="output">
-                        <img src="../../images/htmllessons/img tag.png" alt="output">
-                        <p>output</p>
                     </div>
-                </div>
-                <div id="card019" class="generalCard">
-                    <h2 id="toc-19"> HTML5 Semantic Tags?</h2>
-                    <p class="toc-p">
-                        Semantic tags describes its meaning to both developer and borwser. <br />
-                        Here there are some semantic tags:-
-                    </p>
-
+                    <div id="card17" class="generalCard">
+                        <h2 id="toc-17">Pseudo-class in css</h2>
+                        <textarea class="code-snippet" disabled>
+                        :hove
+                        :active
+                        :visited etc.
+                    </textarea>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank">Refer
+                            this for more</a>
+                    </div>
+                    <div id="card18" class="generalCard">
+                        <h2 id="toc-18">To add image in list style</h2>
+                        <textarea class="code-snippet" disabled>
+                        List-style-image: url(imagePath);
+                    </div>
+                    <div id="card19" class="generalCard">
+                    <h2 id="toc-19">Background properties </h2>
                     <textarea class="code-snippet" disabled>
- <header></header>
-<footer></footer>
-<aside></aside>
-<main></main>
-<article></article>
-<nav></nav>
-<section></section>
-<details></details>
+                        background-color: colorname; (it is for color)
+                        background-image: url(imagepath); (it is for image)
+                        background-position: (this are the postion left top,left center,left bottom,right top,right center,right bottom,center top,center center,center bottom )
+                        background-size: auto|length|cover|contain;
+                        background-repeat: repeat|repeat-x|repeat-y|no-repeat
+                        background-origin: padding-box|border-box|content-box;background-clip
+                        background-attachment: scroll|fixed|local|initial|inherit;                        
                         </textarea>
+                    </div>
+                    <div id="card20" class="generalCard">
+                        <h2 id="toc-20">Float properties</h2>
+                        <p class="toc-p">Float is a property which use for move html tag.</p>
+                        <textarea class="code-snippet" disabled>
+                         Float: left | right | top | bottom;                       
+                        </textarea>
+                    </div>
+                    <div id="card21" class="generalCard">
+                        <h2 id="toc-21">Positions in css</h2>
+                        <p class="toc-p">Position also move our element on web page and if we use position we are able
+                            to top,right,bottom,left.</p>
+                        <ul>
+                            <li>Static (it is a default)</li>
+                            <li>Relative (if we use this it act as a parent of absolute)</li>
+                            <li>Absolute (if we use this it go and touch to relative)</li>
+                            <li>Fixed (if will fixed on the web page)</li>
+                        </ul>
+                        <textarea class="code-snippet" disabled>
+                        h1{
+                            Position: absolute;
+                            Top: 20px;
+                            Left: 20px
+                            Bottom: 10px;
+                            Right: 2px;
+                            }
+                                                 
+                        </textarea>
+                    </div>
+                    <div id="card22" class="generalCard">
+                        <h2 id="toc-22">All about height and width</h2>
+                        <p class="toc-p">Height: We can give height for html element
+                            Width: we can give width for html element
+                        </p>
+                        <textarea class="code-snippet" disabled>
+                        P{
+                            Width: 200px;
+                            Height: 200px;
+                            }                                            
+                        </textarea>
+                    </div>
+                    <div id="card23" class="generalCard">
+                        <h2 id="toc-23">What is display?</h2>
+                        <p class="toc-p">Display is property with this we can display specify element or hide.
+                        </p>
+                        <textarea class="code-snippet" disabled>
+                        p{
+                            Display: none;
+                            Display: block;
+                            Display: inline-block
+                            }           
+                        </textarea>
+                    </div>
+                    <div id="card24" class="generalCard">
+                        <h2 id="toc-24">What is box sizing?</h2>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank">Refert
+                            this article: </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <script src="../../javascript/script.js"></script>
 </body>

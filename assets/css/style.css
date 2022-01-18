@@ -181,6 +181,9 @@ nav ul li a {
     font-weight: 400;
     resize: none;
 }
+#converToDisplay {
+    display: block;
+}
 .output {
     width: 300px;
     height: auto;
