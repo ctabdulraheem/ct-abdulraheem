@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
+        rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../../images/favicon.jpg">
+
+    <title>Frontend Training - Grid Lessons</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li>
+                    <a href="/" target="_self">Raheemalzeeshan</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="ctBranding">
+                <h1>Frontend Training</h1>
+                <p id="ct-company"> By Coalition Technologies</p>
+            </div>
+
+            <div id="htmlLesson" class="fd-training">
+                <div class="lesson">
+                    <h2>>> Grid Training</h2>
+                </div>
+                <div class="table-content">
+                    <p class="toc">Table Of Content</p>
+                    <div class="toc-list">
+                        <ol>
+                            <a href="#toc-1">
+                                <li>What is grid vs Flexbox?</li>
+                            </a>
+                            <a href="#toc-2">
+                                <li>To declare grid use</li>
+                            </a>
+                            <a href="#toc-3">
+                                <li>To define width</li>
+                            </a>
+                            <a href="#toc-4">
+                                <li>To give spacing between column</li>
+                            </a>
+                            <a href="#toc-5">
+                                <li>To give spacing between row</li>
+                            </a>
+                            <a href="#toc-6">
+                                <li>Short hand property for both column and row?</li>
+                            </a>
+                            <a href="#toc-7">
+                                <li>We can use fr in grid template columns</li>
+                            </a>
+                            <a href="#toc-8">
+                                <li>To give height in grid</li>
+                            </a>
+                            <a href="#toc-9">
+                                <li>To adopt auto height in grid</li>
+                            </a>
+                            <a href="#toc-10">
+                                <li>To justify content?</li>
+                            </a>
+                            <a href="#toc-11">
+                                <li>To align items</li>
+                            </a>
+                            <a href="#toc-12">
+                                <li>To align self</li>
+                            </a>
+                        </ol>
+                    </div>
+                </div>
+                <div class="lessonStart">
+                    <div id="card01" class="generalCard">
+                        <h2 id="toc-1">What is grid vs Flexbox?</h2>
+                        <p class="toc-p">Flexbox will give us one dimensional layout where else grid will give us two dimensional layout </p>
+                        <img src="../../images/grid/grid-vs-flexbox.png" alt="Flexbox"/>
+                    </div>
+                    <div id="card02" class="generalCard">
+                        <h2 id="toc-2">To declare grid use</h2>
+                        <p class="toc-p">To work on grid you need to give display:grid to the parent element on which you are working.</p>
+                        <textarea class="code-snippet" disabled>
+                            .parentBox{
+                                display: grid;
+                            }
+                        </textarea>
+                    </div>
+                    <div id="card03" class="generalCard">
+                        <h2 id="toc-3">To define width</h2>
+                        <p class="toc-p">
+                            If we need to initialize to width of html element inset of width property in grid we can use grid-template-columns;  
+                        </p>
+                        <textarea class="code-snippet" disabled>
+                            .parentBox{
+                                Grid-template-columns: value1 value 2 value3;
+                            }
+                        </textarea>
+                    </div>
+                    <div id="card04" class="generalCard">
+                        <h2 id="toc-4">To give spacing between column</h2>
+                        <p class="toc-p">
+                            In normal scenario to give spacing we use padding or margin but in grid we give spacing without using padding or margin. Here we are using grid column to giving spacing in column.
+                        </p>
+                        <textarea class="code-snippet" disabled>
+                        .parentBox{
+                            grid-column-gap: 1rem;
+                        }
+                        </textarea>
+                    </div>
+                    <div id="card05" class="generalCard">
+                        <h2 id="toc-5">To give spacing between row</h2>
+                        <p class="toc-p">
+                            Here we are using gird row to give spacing in row.
+                        </p>
+                        <textarea class="code-snippet" disabled>
+                           .parentBox{
+                            grid-row-gap: 1rem;
+                           }
+                        </textarea>
+                    </div>
+                    <div id="card06" class="generalCard">
+                        <h2 id="toc-6">Short hand property for both column and row?</h2>
+                        <p class="toc-p">
+                            To give spacing in both column and row togeather we can use 
+                        </p>
+                        <textarea class=" code-snippet" disabled>
+                          .parentBox{
+                            grid-gap: 1rem;
+                          }
+                        </textarea>
+                    </div>
+                    <div id="card7" class="generalCard">
+                        <h2 id="toc-7">We can use fr (fractional unit) in grid template columns</h2>
+                        <p class="toc-p">It is recommend to use fr inset of  "px,% etc". to repeat we use repeat().</p>
+                        <textarea class="code-snippet" disabled>
+                          .parentBox{
+                            grid-template-columns: 1fr 2fr 3fr;
+                            grid-template-columns: repeat (1fr 2fr 3fr);
+                          }
+                        </textarea>
+                    </div>
+                    <div id="card08" class="generalCard">
+                        <h2 id="toc-8">To give height in grid</h2>
+                        <p class="toc-p">
+                            We can also give height in grid.
+                        </p>
+                        <textarea class="code-snippet" disabled>
+                            .parentBox{
+                                grid-auto-rows: 100px;
+                            }
+                        </textarea>
+                    </div>
+                    <div id="card09" class="generalCard">
+                        <h2 id="toc-9">To adopt auto height in grid </h2>
+                        <p class="toc-p">
+                            If we want that height should adopt automaticly according to content we can give "minmax" in grid auto rows;
+                        </p>
+                        <textarea class="code-snippet" disabled>
+                            .parentBox{
+                                grid-auto-rows: minmax (100px, auto);
+                            }
+                        </textarea>
+                    </div>
+                    <div id="card010" class="generalCard">
+                        <h2 id="toc-10">To justify content?</h2>
+                        <p class="toc-p">To give child elements align we use justify content.</p>
+                        <textarea class="code-snippet" disabled>
+                            .parentBox{
+                                justify-content: center | space-evenly | start | end | space-between | space-around;
+                            }
+                        </textarea>
+                    </div>
+                    <div id="card011" class="generalCard">
+                        <h2 id="toc-11">To align items</h2>
+                        <p class="toc-p">
+                           Align items will our child elements to align top, bottom.
+                        </p>
+                        <textarea class="code-snippet" disabled>
+                            .parentBox{
+                                align-items: baseline | center | start | end | stretch;
+                            }
+                        </textarea>
+                    </div>
+                    <div id="card012" class="generalCard">
+                        <h2 id="toc-12">To align self</h2>
+                        <p class="toc-p">
+                            Align self should give in child elemment it will align the them self.
+                        </p>
+                        <textarea class="code-snippet" disabled>
+                            .box{
+                                align-self: center | baseline | flex-start | flex-end | self-end;
+                            }
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../../javascript/script.js"></script>
+</body>
+
+</html>
