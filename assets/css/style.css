@@ -202,10 +202,14 @@ nav ul li a {
     text-decoration: underline;
 }
 .projects {
-box-shadow: 0px 2px 6px #11111147;
+    box-shadow: 0px 2px 6px #11111147;
     width: 30%;
     padding: 20px;
     margin: 21px 0px;
+}
+.projects {
+    display: inline-block;
+    margin-right: 20px;
 }
 .projects img {
     width: 100%;
@@ -225,6 +229,16 @@ box-shadow: 0px 2px 6px #11111147;
     text-align: center;
     padding: 10px 11px;
     border-radius: 6px;
+}
+@media only screen and (max-width: 1024px){
+    .projects a{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 840px){
+    .projects{
+        width: 45%;
+    }
 }
 @media only screen and (max-width: 768px){
     .into { 
