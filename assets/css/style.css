@@ -202,9 +202,10 @@ nav ul li a {
     text-decoration: underline;
 }
 .projects {
-    box-shadow: 0px 2px 6px #11111117;
+box-shadow: 0px 2px 6px #11111147;
     width: 30%;
     padding: 20px;
+    margin: 21px 0px;
 }
 .projects img {
     width: 100%;
