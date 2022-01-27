@@ -241,6 +241,9 @@ footer p a {
   .showcase h2 {
     font-size: 25px;
   }
+  .showcase-xl{
+    display: block;
+  }
   /* bottom-showcase */
   .bottom-showcase {
     height: 60vh;
