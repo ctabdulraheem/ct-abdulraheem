@@ -191,10 +191,13 @@ table tbody td p {
 footer {
   padding: 20px 20px 50px;
 }
-footer p {
+footer p,footer p a {
   color: #999;
   margin-bottom: 20px;
   font-size: 14px;
+}
+footer p a{
+  margin-left: 5px;
 }
 .footer-nav {
   display: grid;
