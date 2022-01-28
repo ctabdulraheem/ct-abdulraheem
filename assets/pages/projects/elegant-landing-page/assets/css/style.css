@@ -1,0 +1,156 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Header*/
+header::after {
+  background: url("../images/header-img.webp") no-repeat center center/cover;
+  height: 100vh;
+  content: "";
+  display: block;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  transition: all 1000ms;
+  cursor: pointer;
+}
+header:hover::after {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+.header-banner {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+header:hover .header-banner {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+.header-banner .brand-logo img {
+  width: 250px;
+  height: 250px;
+}
+.header-banner .header-content h1 {
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+/*What we offer*/
+.our-offers {
+  background-color: #191919;
+  color: #fff;
+  padding: 20px 0px;
+}
+.our-offers svg {
+  fill: #fff;
+}
+.card {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 1px dashed #333;
+}
+.card svg {
+  width: 120px;
+  height: 100px;
+}
+.card h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.card p {
+  padding-bottom: 10px;
+}
+
+/*About us*/
+.about-us {
+  background-color: #f4f4f4;
+  color: #333333;
+  padding: 25px 0px;
+}
+.about-img {
+  text-align: center;
+}
+.about-us .about-img svg {
+  width: 190px;
+  height: 190px;
+  fill: #333333;
+}
+.about-us .about-text {
+  width: 80%;
+  margin: 0 auto;
+}
+.about-us .about-text h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.about-us .about-text p {
+  font-size: 16px;
+}
+
+/*Footer*/
+footer {
+  background-color: #333333;
+  padding: 20px 0px;
+}
+footer p {
+  color: #f4f4f4;
+  text-align: center;
+}
+
+@media only screen and (min-width: 769px) {
+  /*Header*/
+  .header-banner .brand-logo img {
+    width: 210px;
+    height: 210px;
+  }
+  .header-banner .header-content {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  /*We make offer*/
+  .our-offers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 35px 0px;
+  }
+  .card{
+      border-bottom: none;
+  }
+  .card svg {
+    width: 60px;
+    height: 60px;
+  }
+  .card h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .card p {
+      font-size: 14px;
+  }
+
+  /*About us*/
+  .about-us{
+      display: flex;
+      padding: 60px 20px;
+    }
+    .about-us .about-img{
+        width: 40%;
+    }
+    .about-us .about-text{
+        width: 50%;
+    }
+
+}
