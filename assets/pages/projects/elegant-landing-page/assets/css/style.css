@@ -61,8 +61,8 @@ header:hover .header-banner {
   border-bottom: 1px dashed #333;
 }
 .card svg {
-  width: 120px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
 .card h2 {
   font-size: 25px;
@@ -127,10 +127,6 @@ footer p {
   }
   .card{
       border-bottom: none;
-  }
-  .card svg {
-    width: 60px;
-    height: 60px;
   }
   .card h2 {
     font-size: 24px;
