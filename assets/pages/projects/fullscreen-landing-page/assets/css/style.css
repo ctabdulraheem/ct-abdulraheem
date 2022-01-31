@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-Arial: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #926239;
+}
+p {
+  font-size: 17px;
+  line-height: 25px;
+}
+/*Header*/
+
+header {
+  background: url("../images/beachshowcase.webp") no-repeat center center/cover;
+  height: 100vh;
+  color: #926239;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-family: var(--font-Arial);
+  font-size: 40px;
+  text-align: center;
+  padding: 0px 10px;
+  margin-bottom: 0.8rem;
+}
+header p {
+  font-family: var(--font-Arial);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0px 10px;
+  margin-bottom: 1rem;
+}
+header a {
+  border: 1px solid #926239;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-weight: 500;
+  font-family: var(--font-Arial);
+}
+header a:hover {
+  background-color: #926239;
+  color: #f4f4f4;
+}
+/* Cards */
+.card {
+  font-family: var(--font-Arial);
+  background-color: #f4f4f4;
+  color: #926239;
+  padding: 20px;
+}
+.card:nth-child(odd) {
+  background-color: #926239;
+  color: #f4f4f4;
+}
+.card:nth-child(3) {
+  display: flex;
+  padding: 0px;
+  background-color: #926239;
+  color: #f4f4f4;
+}
+.card:nth-child(3) p {
+  font-size: 14px;
+  padding: 20px 15px;
+}
+.card:nth-child(3) p:nth-child(2) {
+  background-color: #f4f4f4;
+  color: #926239;
+}
+
+/*Responsive Code*/
+@media only screen and (min-width: 769px) {
+  header h1 {
+    font-size: 50px;
+    margin-bottom: 0.5rem;
+  }
+  header p {
+    font-size: 20px;
+  }
+  header a {
+    padding: 12px 20px;
+  }
+  /* Cards */
+  .card {
+    padding: 20px 30px;
+  }
+  .card:nth-child(3) p {
+    font-size: 16px;
+    padding: 20px 30px;
+  }
+}
