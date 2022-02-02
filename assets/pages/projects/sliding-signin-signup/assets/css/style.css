@@ -31,6 +31,7 @@ main .container {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 main .form-wrapper {
   padding: 20px;
@@ -93,6 +94,8 @@ main .form-wrapper {
   background: linear-gradient(to right, #ff4b2b, #ff416c);
   color: #fff;
   padding: 20px;
+  border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .card-col h2 {
   font-size: 25px;
