@@ -17,12 +17,12 @@ svg {
   height: 17px;
   fill: #333;
 }
-main {
+body{
   background: #f6f5f7;
-  padding: 2rem 0px;
-  display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+
+}
+main {
+  padding: 3rem 0px;
 }
 main .container {
   background-color: #ffff;
