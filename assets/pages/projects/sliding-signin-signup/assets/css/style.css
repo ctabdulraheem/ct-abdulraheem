@@ -20,6 +20,9 @@ svg {
 main {
   background: #f6f5f7;
   padding: 2rem 0px;
+  display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 main .container {
   background-color: #ffff;
