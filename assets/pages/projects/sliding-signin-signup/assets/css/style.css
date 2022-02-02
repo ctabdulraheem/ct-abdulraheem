@@ -158,6 +158,7 @@ main .form-wrapper {
     justify-content: center;
     align-items: center;
     border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
   .form-block input {
     width: 100%;
