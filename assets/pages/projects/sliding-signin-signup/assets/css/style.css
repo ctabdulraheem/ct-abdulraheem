@@ -8,6 +8,10 @@
   font-family: "Montserrat";
   src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
 }
+body{
+  background: #f6f5f7;
+
+}
 a {
   text-decoration: none;
   color: #333;
@@ -17,9 +21,9 @@ svg {
   height: 17px;
   fill: #333;
 }
-body{
-  background: #f6f5f7;
 
+label{
+  display: none;
 }
 main {
   padding: 3rem 0px;
