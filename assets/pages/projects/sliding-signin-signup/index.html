@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Creating a sign in/up form with some animation using CSS and a tiny bit of JavaScript." />
+    <meta name="author" content="Sign In & Sign Up Form" />
+    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Sliding Sign In & Sign Up Form</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="col col-signin">
+                <!--Signin form-->
+                <div class="form-wrapper">
+                    <!--Sign In form-->
+                    <div class="form-block sign-in">
+                        <form action="" method="POST">
+                            <h1>Sign in</h1>
+                            <div class="socialmedia-icons">
+                                <a href="https:www.facebook.com" target="_blank" rel="noopener">
+                                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.twitter.com" target="_blank" rel="noopener">
+                                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <span>or use your account</span>
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password" />
+                            <a href="#" target="_self" class="forget-pwa" rel="noopener">Forgot your password?</a>
+                            <input type="submit" value="SIGN IN" class="form-btn" />
+                        </form>
+                    </div>
+                </div>
+                <!--sign up Card-->
+                <div class="card-col card-signIn">
+                    <h2>Hello, Friend!</h2>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button>SIGN UP</button>
+                </div>
+            </div>
+            
+            <div class="col col-signup">
+                <!--SignIn Card-->
+
+                <div class="card-col card-signUp">
+                    <h2>Welcome Back!</h2>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button>SIGN IN</button>
+                </div>
+                <div class="form-wrapper">
+                    <!--Sign Up form-->
+                    <div class="form-block sign-up">
+                        <form action="" method="POST">
+                            <h1>Create Account</h1>
+                            <div class="socialmedia-icons">
+                                <a href="https:www.facebook.com" target="_blank" rel="noopener">
+                                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.twitter.com" target="_blank" rel="noopener">
+                                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <span>or use your email for registration</span>
+                            <input type="text" placeholder="Name" />
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password" />
+                            <input type="submit" value="SIGN UP" class="form-btn" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
