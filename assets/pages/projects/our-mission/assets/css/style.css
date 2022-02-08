@@ -141,7 +141,7 @@ header::after {
 .about {
   padding: 70px 0px;
   animation: animate__fadeIn;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 .about h2 {
   font-family: var(--avenirltstd);
@@ -162,6 +162,7 @@ header::after {
   color: #fff;
   padding: 65px 0px;
   text-align: center;
+  overflow: hidden;
 }
 .team h2 {
   font-family: var(--avenirltstd);
