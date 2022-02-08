@@ -103,7 +103,7 @@ header::after {
 /* Hero Image */
 .hero-img {
   background: url("../images/bg.webp") no-repeat;
-  height: 100vh;
+  height: 600px;
   position: relative;
 }
 .hero-img .container {
@@ -134,7 +134,7 @@ header::after {
   font-family: var(--avenirltstd);
   font-size: 16px;
   color: #fff;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 /* About */
@@ -287,6 +287,9 @@ footer ul li {
   font-weight: 500;
   display: inline-block;
   padding: 0px 15px 20px 0px;
+}
+footer .footer-icons {
+  padding-bottom: 15px;
 }
 footer .footer-icons a {
   width: 45px;
