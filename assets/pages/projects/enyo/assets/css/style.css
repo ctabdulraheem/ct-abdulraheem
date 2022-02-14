@@ -72,10 +72,12 @@ header {
   display: inline-block;
   text-align: right;
   width: 50%;
+
 }
 /*Menu icon for mobile*/
 .menu-bar svg {
   fill: #fff;
+  cursor: pointer;
 }
 /* Nav links */
 nav {
