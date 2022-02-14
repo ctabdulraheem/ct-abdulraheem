@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Custom Font */
+@font-face{
+    font-family: "lato-regular";
+    src: url("../fonts/lato-regular.ttf");
+}
+
+
+/* Image Section */
+.parallx-bgimg {
+    font-family: "lato-regular";
+}
+h1{
+    text-transform: uppercase;
+}
+.parallx-bgimg h1, .parallx-bgimg p{
+    background-color: #111;
+    color: #fff;
+    padding: 20px 20px;
+    font-weight: 400;
+    font-size: 23px;
+    letter-spacing: 3px;
+} 
+.parallaxbg1 {
+    background-image: url("../images/image1.webp");
+    background-repeat: no-repeat;
+    background-position: center/cover;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parallaxbg2 {
+    background-image: url("../images/image2.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parallaxbg3 {
+    background-image: url("../images/image3.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parallaxbg4 {
+    background-image: url("../images/image1.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content */
+.parallx-content {
+    font-family: "lato-regular";
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+.parallx-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.parallx-content p {
+    width: 80%;
+    margin:  0 auto;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: center;
+}
+.parallx-one{
+    background-color: #f4f4f4;
+    color: #666;
+}
+.parallx-two {
+    background-color: #282e34;
+    color: #ddd;
+}
+.parallx-three {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+@media only screen and (min-width: 500px){
+    .parallaxbg1 ,.parallaxbg2,.parallaxbg3,.parallaxbg4{
+        background-attachment: fixed;
+    }
+}
