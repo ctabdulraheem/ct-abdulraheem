@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Custom Fonts */
+@font-face {
+    font-family: 'poppins-thin';
+    src: url("../fonts/Poppins/Poppins-Thin.ttf");
+    display: swap;
+}
+@font-face {
+    font-family: 'poppins-medium';
+    src: url("../fonts/Poppins/Poppins-Medium.ttf");
+    display: swap;
+}
+@font-face {
+    font-family: 'poppins-bold';
+    src: url("../fonts/Poppins/Poppins-Bold.ttf");
+    display: swap;
+}
+body{
+    background-color: #e8e8e8;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0px;
+}
+.container h1 {
+    font-family: 'poppins-bold';
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.profile-card {
+    background-color: #fff;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px 2px #0000000f;
+}
+.profile-img {
+    margin-bottom: 20px;
+    width: 128px;
+    height: 128px;
+    border-radius: 9px;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+@keyframes skeleton-loading {
+    0% {
+      background-color: hsl(200, 20%, 70%);
+    }
+  
+    100% {
+      background-color: hsl(200, 20%, 95%);
+    }
+  }
+.profile-img img {
+    width: 128px;
+    height: 128px;
+    border-radius: 9px;
+    box-shadow: 0px 1px 2px 1px #00000059;
+}
+.profile-details {
+    width: 90%;
+    position: relative;
+}
+.profile-details h2{
+    font-family: 'poppins-bold';
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.gender {
+    text-align: right;
+    position: absolute;
+    right: 0%;
+    top: 13%;
+}
+.gender svg {
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+.gender svg.male{
+    fill: #339ae7;
+}
+.gender svg.female{
+    fill: #ed659d;
+}
+.gender svg.svg-show {
+    display: block;
+}
+.profile-details div span{
+    font-family: 'poppins-thin';
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000;
+}
+.profile-details div p {
+    font-family: 'poppins-medium';
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #000;
+    margin-bottom: 15px;
+    overflow-wrap: break-word;
+}
+
+@media only screen and (min-width: 769px){
+    .container h1 {
+        margin-bottom: 40px;
+    }
+    .profile-card {
+        width: 50%;
+        padding: 25px
+    }
+    .profile-details h2 {
+        margin-bottom: 40px;
+    }
+    .profile-details  .gender {
+        top: 14%;
+    }
+    .profile-details .fname, .profile-details .dob,.profile-details .location {
+        display: inline-block;
+        width: 59%;
+    }
+    .profile-details .lname,.profile-details .age,.city  {
+        display: inline-block;
+        width: 35%;
+    }
+    
+    
+}
