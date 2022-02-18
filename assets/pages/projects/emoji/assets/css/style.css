@@ -1,0 +1,73 @@
+  *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+  }
+  @font-face {
+      font-family: "roboto-bold";
+      src: url("../fonts/roboto/Roboto-Bold.ttf");
+      display: swap;
+  }
+  @font-face {
+      font-family: "roboto-regular";
+      src: url("../fonts/roboto/Roboto-Regular.ttf");
+      display: swap;
+  }
+  main{
+      background-color: #ebebeb;
+      padding: 2rem 0pxs;
+  }
+  .container{
+      width: 90%;
+      margin: 0 auto;
+  }
+  h1 {
+    font-family: "roboto-bold";
+    font-size: 50px;
+    text-align: center;
+    padding: 30px 0px;
+  }
+
+.emoji-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.emoji-card .emojis {
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    box-shadow: 1px 1px 2px 1px #00000026;
+    border-radius: 5px;
+}   
+.emojis .icon {
+    background-color: #f1f1f1;
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    height: 100px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.emojis ul {
+    padding: 0px 10px;
+}
+.emojis ul li {
+    font-family: "roboto-regular";
+    list-style: none;
+    line-height: 1.8;
+}
+.emojis ul li span:nth-child(1){
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-right: 10px;
+    color: #312f31;
+}
+.emojis ul li span:nth-child(2){
+    display: block;
+    font-size: 15px;
+    color: #5c5c5d;
+    word-break: break-all;
+}
