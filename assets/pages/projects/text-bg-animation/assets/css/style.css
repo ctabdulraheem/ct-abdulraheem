@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Custom font */
+@font-face {
+    font-family: "charm";
+    src: url("../fonts/charm/Charm-Bold.ttf");
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    background: linear-gradient(251deg, rgb(0 0 0 / 68%), rgb(0 0 0 / 86%)),url("../images/bg-img.jpg");
+}
+main h1 {
+    font-family: "charm";
+    font-size: 4rem;
+    background: url("../images/text-bg.png") no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* animation: textAnime 90s linear infinite;
+    -webkit-animation: textAime 90s linear infinite; */
+    animation: moveBg 90s linear infinite;
+}
+
+@keyframes moveBg {
+    0%{
+        background-position: 0% 30%;
+    }   
+    100%{
+        background-position: 100% 50%;
+    }
+}
