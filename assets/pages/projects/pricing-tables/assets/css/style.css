@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    /* height: 100vh; */
+    background-color: #333333;
+    padding: 2rem 0px;
+}
+main .container{
+    width: 90%;
+    margin: 0 auto;
+}
+/* Heading 1 */
+main h1 {
+    font-family: "Tahoma", sans-serif;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+    line-height: 1.6;
+}
+/* Sections */
+section {
+    background-color: #fff;
+    margin: 10px auto 30px;
+    border: 1px solid #555;
+}
+/* Table fist letter bold text */
+section span{
+    font-weight: bold;
+}
+
+section ul {
+    list-style: none;
+    box-shadow: 0 10px 15px 0 #000;
+}
+section ul li {
+    font-family: "Tahoma", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 15px 0px;
+}
+/* Sign up btn */
+section ul li a {
+    background-color: #4CAf50;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 35px;
+    font-size: 17px;
+}
+section.simple ul li:nth-child(1){
+    background-color: #111;
+    color: #fff;
+    font-size: 20px;
+}
+section.standard ul li:nth-child(1){
+    background-color: #4CAf50;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+section ul li:nth-child(8){
+    background-color: #f4f4f4;
+    padding: 20px 0px;
+}
+section ul li:nth-child(2){
+    background-color: #f4f4f4;
+}
+
+/* Responsive code */
+@media only screen and (min-width: 769px){
+    main{
+        height: 100vh;
+    }
+    main h1 {
+        font-size: 32px;
+    }
+    main .container {
+        display: flex;
+        width: 95%;
+    }
+    section {
+        width: 33%;
+        margin-right: 15px;
+    }
+}
