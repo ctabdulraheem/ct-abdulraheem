@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Bannner */
+section:nth-child(1) {
+  padding: unset;
+}
+/* Background video */
+.welcome-banner video {
+  width: calc(100% - 0px);
+  height: 100vh;
+  overflow: hidden;
+  object-fit: cover;
+  position: relative;
+}
+/* Background Color */
+#bg-overlay {
+  background-color: #446e86;
+  width: calc(100% - 0px);
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  opacity: 0.8;
+}
+/* Banner Content */
+.welcome-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  color: #fff;
+  text-align: center;
+}
+.welcome-content h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.welcome-content p {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+/* Banner Btn */
+.welcome-content a {
+  background-color: #34b3a0;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 15px 20px;
+  text-align: center;
+}
+.welcome-content a:hover {
+  opacity: 0.8;
+}
+/* Sections */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+section {
+  padding: 20px 0px;
+}
+section h2 {
+  font-size: 25px;
+  color: #333333;
+  text-align: center;
+  padding-bottom: 20px;
+}
+section p {
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: center;
+}
+/* Section B */
+section:nth-child(3) h2 {
+  color: #fff;
+}
+section:nth-child(3) {
+  background-color: #333333;
+  color: #fff;
+}
+
+/* Responsive Code for tablets */
+@media only screen and (min-width: 768px) {
+  .welcome-content h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+  .welcome-content p {
+    font-size: 20px;
+  }
+}
+/* Responsive Code */
+@media only screen and (min-width: 950px) {
+  .welcome-content {
+    width: 60%;
+  }
+  .container {
+    width: 72%;
+  }
+  section h2 {
+    font-size: 30px;
+  }
+}
