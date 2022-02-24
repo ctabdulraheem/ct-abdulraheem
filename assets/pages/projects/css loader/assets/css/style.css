@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "lato-bold";
+    src: url("../fonts/lato/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: "lato-regular";
+    src: url("../fonts/lato/Lato-Regular.ttf");
+}
+main {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Loading */
+.lodaing-container {
+    height: 50px;
+    animation: rotate 2s linear infinite;
+    transform: bottom center;
+}
+@keyframes rotate {
+    to{
+        transform: rotate(360deg);
+    }
+}
+.circle{
+    background-color: purple;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: -10px;
+    display: inline-block;
+    animation: grow 1.5s linear infinite;
+    transform: scale(0);
+}
+.circle:nth-child(2){
+    animation-delay: 0.70s;
+    background-color: palevioletred;
+}
+
+@keyframes grow {
+    50%{
+        transform: scale(1);
+    }
+}
+
+
+/* Main Content */
+section.main-content .container {
+    width: 80%;
+    margin: 0 auto;
+}
+.main-content {
+    text-align: center;
+    display: none;
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+section.main-content h1 {
+    font-family: "lato-bold";
+    font-size: 30px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+section.main-content p {
+    font-family: "lato-regular";
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+section.main-content a {
+    background-color: purple;
+    color: #fff;
+    font-family: "lato-regular";
+    font-size: 16px;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+section.main-content a:hover {
+    background-color: #440244;
+    transition: all 0.50s ease-out;
+}
+
+@media only screen and (min-width: 769px){
+    section.main-content .container {
+        width: 60%;
+    }
+    section.main-content h1 {
+        font-size: 50px;
+    }
+    section.main-content p {
+        font-size: 20px;
+    }
+    section.main-content a {
+        font-size: 20px;
+    }
+}
