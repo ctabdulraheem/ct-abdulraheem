@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #92bde7;
+    color: #485e74;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    width: 90%;
+    margin: 50px auto;
+}
+/* Heading */
+.container h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.container h1 span {
+    color: #fff;
+}
+section {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 0 rgb(72 94 116 / 70%);
+}
+.details {
+    background-color: #c9e6ff;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+}
+.details h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.details address ul {
+    list-style: none;
+}
+.details address ul li {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+}
+.details address ul li svg {
+    margin-right: 5px;
+    width: 18px;
+    height: 18x;
+    fill: #485e74;;
+}
+.details address ul li a {
+    color: #485e74;
+    text-decoration: none;
+}
+/* Form */
+.form-wrapper {
+    background-color: #f9feff;
+    padding: 20px;
+}
+.form-wrapper h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.form-wrapper label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-wrapper input,textarea {
+    padding: 1em;
+    border: 1px solid #c9e6ff;
+    margin-bottom: 20px;
+    width: 100%;
+}
+textarea {
+    resize: none;
+}
+.form-wrapper #submit-btn{
+    background-color: #c9e6ff;
+    font-size: 14px;
+    font-style: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.form-wrapper #submit-btn:hover{
+    background-color: #90b1ce;
+}
+
+@media only screen and (min-width: 768px){
+    .container h1 {
+        text-align: left;
+    }
+    section{
+        display: flex;
+        margin: 0;
+    }
+    .details {
+        width: 40%;
+        padding: 40px;
+    }
+    .details h2 {
+        text-align: left;
+    }
+    .details address ul li {
+        text-align: left;
+    }
+    .form-wrapper {
+        width: 60%;
+        padding: 40px 20px;
+    }
+    .form-wrapper p {
+        display: inline-block;
+        width: 45%;
+    }
+    .form-wrapper p:nth-child(6){
+        width: 100%;
+    }
+}
