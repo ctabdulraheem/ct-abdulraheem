@@ -7,11 +7,13 @@
 /* Custom Font */
 @font-face {
   font-family: "poppins";
-  src: url("../../fonts/poppins/poppins-bold.ttf");
+  src: url("../../fonts/poppins/poppins-bold.ttf") format('truetype');
+  display: "swap";
 }
 @font-face {
   font-family: "lato-regular";
-  src: url("../../fonts/lato/lato-regular.ttf");
+  src: url("../../fonts/lato/lato-regular.ttf") format('truetype');
+  display: "swap";
 }
 
 /* Root Variables */
