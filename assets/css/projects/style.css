@@ -1,0 +1,150 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Custom Font */
+@font-face {
+  font-family: "poppins";
+  src: url("../../fonts/poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "lato-regular";
+  src: url("../../fonts/Lato/lato-regular.ttf");
+}
+
+/* Root Variables */
+:root {
+  --heading-poppins: "poppins";
+  --latoRegular: "lato-regular";
+}
+a {
+  font-family: var(--latoRegular);
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+main h1 {
+  padding-bottom: 30px;
+}
+.projects-page {
+  background-color: #f4f8fb;
+}
+
+/* Project Category */
+.project-category {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.proj-category {
+  padding: 12px 8px;
+  margin-right: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 1px #0000001a;
+  cursor: pointer;
+}
+.proj-category:hover{
+  opacity: 0.9;
+  box-shadow: 0px 1px 2px 1px #7b9cb47a;
+}
+
+.proj-category h2 {
+  font-family: var(--latoRegular);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.training-category {
+  background-color: #ededed;
+}
+.psd-category {
+  background-color: #321589;
+  color: #fff;
+}
+.self-category {
+  background-color: #e07120;
+  color: #fff;
+}
+.active-proj-category{
+  background-color: #2c2b30;
+  color: #fff;
+}
+
+/* All Projectss */
+.project-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+.project-card {
+  margin-bottom: 35px;
+  animation: rotate 1s linear alternate;
+  transition: all 0.8s linear;
+}
+.project-img {
+  width: 247px;
+  height: 232px;
+  margin: 0 auto;
+}
+.project-img img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 1px 2px 1px #0000001a;
+}
+.project-card h3 {
+  font-family: var(--latoRegular);
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0px 0px 15px;
+}
+.project-card a:hover {
+  opacity: 0.8;
+}
+.hide-projects {
+  display: none;
+}
+@keyframes rotate {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  /* Project Category */
+  .project-category {
+    margin-bottom: 40px;
+  }
+  .proj-category {
+    margin-right: 25px;
+  }
+  .proj-category {
+    padding: 15px 20px;
+  }
+  
+  .proj-category h2 {
+    word-spacing: 5px;
+  }
+  .project-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .project-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .project-card a {
+    display: inline-block;
+  }
+}

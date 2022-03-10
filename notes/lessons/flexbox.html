@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/notes/style.css" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.jpg" type="image/x-icon" />
+
+    <title>Flexbox Lessons | CT Abdul Raheem</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Brand Logo -->
+        <div class="brand-logo">
+            <a href="/"><img src="../../assets/images/brand-logo.png" alt="abdul raheem" /></a>
+        </div>
+        <!-- Nav Bar Icon -->
+        <div class="nav-bar">
+            <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z" />
+            </svg>
+        </div>
+        <!-- Nav Links -->
+        <nav>
+            <ul>
+                <li><a href="/" rel="noopener">Home</a></li>
+                <li><a href="../../projects/index.html" rel="noopener">Projects</a></li>
+                <li><a href="../../notes/index.html" rel="noopener">Take Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <div class="container">
+            <section id="htmlLesson" class="fd-training">
+                <div class="lesson">
+                    <h2>&raquo; Flexbox Training</h2>
+                </div>
+                <div class="table-content">
+                    <p class="toc">Table Of Content</p>
+                    <div class="toc-list">
+                        <ol>
+                            <a href="#toc-1">
+                                <li>What is Flexbox?</li>
+                            </a>
+                            <a href="#toc-2">
+                                <li>How to declare flex property</li>
+                            </a>
+                            <a href="#toc-3">
+                                <li>To increase box size?</li>
+                            </a>
+                            <a href="#toc-4">
+                                <li>To reshuffle box?</li>
+                            </a>
+                            <a href="#toc-5">
+                                <li>To do box alignment?</li>
+                            </a>
+                            <a href="#toc-6">
+                                <li>To bring main parent box in alignment</li>
+                            </a>
+                            <a href="#toc-7">
+                                <li>To give width in flex use flex-basis</li>
+                            </a>
+                            <a href="#toc-8">
+                                <li>To wrap box</li>
+                            </a>
+                            <a href="#toc-9">
+                                <li>To shrink (width) specific box</li>
+                            </a>
+                            <a href="#toc-10">
+                                <li>To align specific box user</li>
+                            </a>
+                            <a href="#toc-11">
+                                <li>To shrink (width) specific box</li>
+                            </a>
+                            <a href="#toc-12">
+                                <li>To align specific box user</li>
+                            </a>
+                        </ol>
+                    </div>
+                </div>
+                <div class="lessonStart">
+                    <div id="card01" class="generalCard">
+                        <h2 id="toc-1"> What is Flexbox?</h2>
+                        <p class="toc-p">Flexbox will help us in creating columns, row and website layout easily. It is
+                            easy to do responsive and have more flexibility than other CSS properties.</p>
+                        <img src="../../assets/images/notes/flexbox/flexbox-icon.png" alt="Flexbox" />
+                    </div>
+                    <div id="card02" class="generalCard">
+                        <h2 id="toc-2">Flexbox Properties</h2>
+                        <img src="../../assets/images/notes/flexbox/flexbox properties.png" alt="flexbox properties" />
+                        </p>
+                    </div>
+                    <div id="card03" class="generalCard">
+                        <h2 id="toc-3">How to declare flex property?</h2>
+                        <textarea class="code-snippet" disabled>
+                            .parentBox{
+                                display: flex;
+                            }
+                        </textarea>
+                    </div>
+                    <div id="card04" class="generalCard">
+                        <h2 id="toc-4">To increase box size?</h2>
+                        <textarea class="code-snippet" disabled>
+                        .box{
+                            flex: 2;
+                        }
+                        </textarea>
+                    </div>
+                    <div id="card05" class="generalCard">
+                        <h2 id="toc-5">To reshuffle box?</h2>
+                        <textarea class="code-snippet" disabled>
+                           .box{
+                            Ordere: 1;
+                           }
+                        </textarea>
+                    </div>
+                    <div id="card06" class="generalCard">
+                        <h2 id="toc-6">To do box alignment?</h2>
+                        <textarea class=" code-snippet" disabled>
+                          .box{
+                            align-items:flex-start | flex-end |canter;
+                          }
+                        </textarea>
+                    </div>
+                    <div id="card7" class="generalCard">
+                        <h2 id="toc-7">To convert row to column or column to row </h2>
+                        <textarea class="code-snippet" disabled>
+                          .box{
+                            flex-direction: column | row | row-reverse | column-reverse;
+                          }
+                        </textarea>
+                    </div>
+                    <div id="card08" class="generalCard">
+                        <h2 id="toc-8">To bring main parent box in alignment</h2>
+                        <textarea class="code-snippet" disabled>
+                            .box{
+                                Justify-content:  flex-start | flex-end | center | space-around | space-between;
+                            }
+                        </textarea>
+                    </div>
+                    <div id="card09" class="generalCard">
+                        <h2 id="toc-9">To give width in flex use flex-basis</h2>
+                        <textarea class="code-snippet" disabled>
+                            .box{
+                                flex-basis: 20%
+                            }
+                        </textarea>
+                    </div>
+                    <div id="card010" class="generalCard">
+                        <h2 id="toc-10">To wrap box</h2>
+                        <textarea class="code-snippet" disabled>
+                            .box{
+                                Flex-wrap : no-wrap | wrap;
+                            }
+                        </textarea>
+                    </div>
+                    <div id="card011" class="generalCard">
+                        <h2 id="toc-11">To shrink (width) specific box</h2>
+                        <p class="toc-p">
+                            By default value is 1
+                        </p>
+                        <textarea class="code-snippet" disabled>
+                            .box{
+                                Flex-shrink: 1;
+                            }
+                        </textarea>
+                    </div>
+                    <div id="card012" class="generalCard">
+                        <h2 id="toc-12">To align specific box user</h2>
+                        <textarea class="code-snippet" disabled>
+                            .box{
+                                Align-self: auto|stretch|center|flex-start|flex-end|baseline 
+                            }
+                        </textarea>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2022 Abdul Raheem</p>
+    </footer>
+    <script src="../../javascript/script.js"></script>
+</body>
+
+</html>

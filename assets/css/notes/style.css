@@ -1,0 +1,264 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Custom Font */
+@font-face {
+  font-family: "poppins";
+  src: url("../../fonts/poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "lato-regular";
+  src: url("../../fonts/Lato/lato-regular.ttf");
+}
+
+/* Root Variables */
+:root {
+  --heading-poppins: "poppins";
+  --latoRegular: "lato-regular";
+}
+li,a,p,div{
+  font-family: var(--latoRegular);
+}
+section.take-notes {
+  padding: 4rem 0px;
+}
+.notes-page {
+  background-color: #e3e6eb;
+}
+/* Noted Card */
+.notes-card {
+  background-color: #fff;
+  width: 220px;
+  text-align: center;
+  padding: 20px 0px;
+  margin: 0 auto 30px;
+}
+.notes-card h3 {
+  font-family: var(--heading-poppins);
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.notes-card svg {
+  width: 115px;
+  height: 115px;
+  display: block;
+  margin: 0 auto 30px;
+}
+.notes-card a {
+  background-color: #181818;
+  color: #fff;
+  font-size: 20px;
+  padding: 6px 50px;
+  border-radius: 5px;
+}
+.notes-card a:hover {
+  background-color: #181818d0;
+  transition: 0.2s all ease-in-out;
+}
+
+.grid-card svg {
+  fill: #5a92d3;
+}
+.flexbox-card svg {
+  fill: #b9d1e6;
+}
+
+/*notes*/
+.notes {
+  width: 140px;
+  background-color: #ecebf0;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 2px 6px #11111117;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.notes img {
+  padding: 20px 20px 10px;
+  width: 80%;
+}
+.notes a {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+.notes p {
+  font-family: var(--latoRegular);
+  padding: 8px;
+  text-align: center;
+  background-color: #161d23;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/*takenotes*/
+.takenotes {
+  width: 140px;
+  background-color: #1a4d5e;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 2px 6px #11111117;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.takenotes img {
+  padding: 20px 20px 10px;
+  width: 90%;
+}
+.takenotes a {
+  text-decoration: none;
+  color: #000000;
+}
+.takenotes p {
+  padding: 8px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+}
+.tn-d {
+  display: block;
+}
+/*fd-training*/
+
+.lesson h2 {
+  font-family: var(--heading-poppins);
+  color: #a37754;
+  font-size: 26px;
+  font-weight: 600;
+  word-spacing: 5px;
+  margin: 10px 0px 8px;
+}
+
+/*Table of content*/
+.table-content {
+  background-color: #3b5d8c1a;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+.table-content p {
+  font-family: var(--latoRegular);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+}
+.table-content .toc-list {
+  padding-left: 43px;
+}
+.toc-list ol a {
+  text-decoration: none;
+  list-style-type: decimal-leading-zero;
+  color: #644e40;
+  line-height: 30px;
+  font-weight: 400;
+}
+.generalCard h2 {
+  color: #2c2c2c;
+  margin: 10px 0px 4px;
+  font-family: var(--heading-poppins);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.generalCard {
+  margin-bottom: 25px;
+}
+.generalCard p {
+  font-size: 16px;
+  text-align: left;
+}
+.generalCard textarea {
+  width: 100%;
+  height: 100px;
+  background: none;
+  border: none;
+  font-family: var(--latoRegular);
+  font-size: 16px;
+  text-align: left;
+  background-color: #f8f9fa;
+  padding: 20px 0px 20px;
+  margin: 10px 0px;
+  color: #1c262f;
+  font-weight: 400;
+  resize: none;
+}
+#converToDisplay {
+  display: block;
+}
+.output {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #1c262f98;
+  border-radius: 5px;
+}
+.output img{
+  width: 100%;
+}
+.output p {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 19px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+.projects {
+  box-shadow: 0px 2px 6px #11111147;
+  width: 30%;
+  padding: 20px;
+  margin: 21px 0px;
+}
+.projects {
+  display: inline-block;
+  margin-right: 20px;
+}
+.projects img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.projects h3 {
+  font-family: var(--heading-poppins);
+  font-size: 20px;
+  margin: 5px 0px 15px;
+  font-weight: 600;
+}
+.projects a {
+  background-color: #567df4;
+  color: #fff;
+  display: block;
+  width: 55%;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 11px;
+  border-radius: 6px;
+}
+
+
+@media only screen and (min-width: 556px) {
+  .container {
+    width: 93%;
+    text-align: center;
+  }
+  .notes-card {
+    display: inline-block;
+    margin: 0 20px 30px auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 93%;
+    text-align: left;
+  }
+  .notes-card {
+    display: inline-block;
+    margin: 0 20px 30px auto;
+  }
+}

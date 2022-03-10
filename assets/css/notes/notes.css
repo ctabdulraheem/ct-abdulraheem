@@ -1,0 +1,112 @@
+
+@media only screen and (max-width: 1024px){
+    .projects a{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 840px){
+    .projects{
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 768px){
+     /* Nav */
+     nav {
+         float: right;
+     }
+     nav ul{
+        display: block;
+    }
+     nav ul li{
+        display: inline-block;
+    }
+    /* SVG */
+    .nav-bar{
+        display: none;
+    }
+    /* Logo */
+    .brand-logo {
+        margin-top: 8px;
+        float: left;
+    }
+    header::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    /* Github btn */
+    .github-wrap {
+        margin: 30px 0px 20px;
+    }
+    .github-btn {
+        font-size: 18px;
+        padding: 10px 43px;
+    }
+}
+@media only screen and (max-width: 768px){
+   
+    .into { 
+        width: 100%;
+        border-radius: 0px;
+    }
+    .into h1 {
+        font-size: 25px;
+    }
+    .into p {
+        font-size: 16px;
+    }
+    .projects {
+        width: 100%;
+    }
+    .projects a {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 425px){
+    .into h1 {
+        font-size: 22px;
+    }
+    .into p {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 375px){
+    nav ul li a {
+        font-size: 20px;
+    }
+    .into h1 {
+        font-size: 19px;
+    }
+    .into p {
+        font-size: 14px;
+    }
+    .takenotes {
+        width: 100%;
+        background-color: #1a4d5e;
+        display: block;
+    }
+    .takenotes img {
+        width: 35%;
+    }
+    .tn-d {
+        display: inline-block;
+    }
+        
+}
+
+@media only screen and (max-width: 320px){
+    .into h1 {
+        font-size: 17px;
+    }
+    .into p {
+        font-size: 12px;
+    }
+    .notes {
+        width: 100%;
+        text-align: center;
+    }
+    .notes img {
+        padding: 20px 20px 10px;
+        width: 45%;
+    }
+}
