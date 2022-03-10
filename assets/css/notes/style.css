@@ -3,23 +3,10 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
-/* Custom Font */
-@font-face {
-  font-family: "poppins";
-  src: url("../../fonts/poppins/Poppins-Bold.ttf") format('truetype');
-  display: "swap";
-}
-@font-face {
-  font-family: "lato-regular";
-  src: url("../../fonts/Lato/lato-regular.ttf") format('truetype');
-  display: "swap";
-}
-
 /* Root Variables */
 :root {
-  --heading-poppins: "poppins";
-  --latoRegular: "lato-regular";
+  --heading-poppins: 'Poppins', sans-serif;
+  --latoRegular: 'Lato', sans-serif;
 }
 li,a,p,div{
   font-family: var(--latoRegular);
