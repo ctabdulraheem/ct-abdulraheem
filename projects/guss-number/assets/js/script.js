@@ -137,11 +137,17 @@ popup_btn.addEventListener("click", () => {
     score.innerHTML = 20;
     remove_errorWranning();
     popup_restbtn();
+    guessesValue.innerHTML = "";
+    numvalue_msg.innerHTML = "";
+    numvalue_msg.classList.remove("snumStatus-msg-low");
 });
 
 // Containe Btn
 popupContine_bnt.addEventListener("click", () => {
     popup_restbtn();
+    guessesValue.innerHTML = "";
+    numvalue_msg.innerHTML = "";
+    numvalue_msg.classList.remove("snumStatus-msg-low");
 
 })
 
