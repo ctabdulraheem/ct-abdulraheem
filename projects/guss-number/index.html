@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guess my number is a games for peope who like to play with the numbers" />
+    <meta name="author" content="Flick Gaming" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <title>Guess My Number</title>
+</head>
+
+<body>
+    <header>
+        <!-- User Life Line -->
+        <div class="container">
+
+            <div class="life-lines">
+                <span>
+                    <img src="assets/images/life-line.svg" alt="Life Line" loading="lazy" class="lifeline-img" />
+                    <img src="assets/images/life-line.svg" alt="Life Line" loading="lazy" class="lifeline-img" />
+                    <img src="assets/images/life-line.svg" alt="Life Line" loading="lazy" class="lifeline-img"/>
+                    <img src="assets/images/life-line.svg" alt="Life Line" loading="lazy" class="lifeline-img"/>
+                    <img src="assets/images/life-line.svg" alt="Life Line" loading="lazy" class="lifeline-img"/>
+                </span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <!-- achievement Dashboard -->
+            <section class="user-data">
+                <div class="achievement-dashboard">
+                    <div class="my-score card">
+                        <img src="assets/images/highest-score.svg" alt="My score" loading="lazy" />
+                        <p>Your Score: <span class="score">20</span>
+                        </p>
+                    </div>
+                    <div class="numStatus card">
+                        <p class="numvalue-msg"></p>
+                    </div>
+                    <p class="btw-num-rule">(Between 1 and 20)</p>
+                </div>
+            </section>
+
+            <!-- Number of Guesses -->
+            <section class="display-guess">
+                <h1>Guesses:</h1>
+                <p class="guesses"></p>
+            </section>
+
+            <!-- User number input field -->
+            <section class="number-input">
+                <label>Make a guess</label>
+                <input type="text" name="number" placeholder="Make a guess" id="user-input-number"/>
+                <p id="error-msg"></p>
+                <!-- Guess btn -->
+                <button class="guess-btn">Guess</button>
+            </section>
+
+            <!-- Popup for loose and win-->
+            <section class="pop-up-wrapper">
+                <div class="pop-up">
+                    <h2>Ouch...</h2>
+                    <p>You loose</p>
+                    <div class="popups-btn">
+                        <button class="pop-up-btn pop-up-playagain">Play Again</button>
+                        <button class="pop-up-btn pop-up-contine">Containe</button>
+                    </div>
+                    <div class="celebration">
+                        <img src="assets/images/win.gif" alt="game celebrating " loading="lazy" class="game-celebration"/>
+                    </div>
+                </div>
+            </section>
+            
+
+        </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
