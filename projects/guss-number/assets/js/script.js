@@ -140,6 +140,7 @@ popup_btn.addEventListener("click", () => {
     guessesValue.innerHTML = "";
     numvalue_msg.innerHTML = "";
     numvalue_msg.classList.remove("snumStatus-msg-low");
+    numvalue_msg.classList.remove("snumStatus-msg-high");
 });
 
 // Containe Btn
@@ -148,6 +149,7 @@ popupContine_bnt.addEventListener("click", () => {
     guessesValue.innerHTML = "";
     numvalue_msg.innerHTML = "";
     numvalue_msg.classList.remove("snumStatus-msg-low");
+    numvalue_msg.classList.remove("snumStatus-msg-high");
 
 })
 
