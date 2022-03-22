@@ -18,6 +18,7 @@
         }
 
         jQuery.ajax({
+            type: "GET",
             url: "http://ip-api.com/json",
             success: function (findmeResult) {
                 if (findmeResult.status == 'success') {
