@@ -17,21 +17,26 @@
             fineMeElement.html(fineMe);
         }
 
+        let methodType = "GET";
+        let url = `http://ip-api.com/json`;
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
 
-        function myfun() {
-            return $.ajax({
-                method: "POST",
-                url: "http://ip-api.com/json",
-            });
-        } $.when(myfun()).done(function (findmeResult) {
-            if (findmeResult.status == 'success') {
-                findMeData(findmeResult.countryCode, findmeResult.country, findmeResult.regionName, findmeResult.region, findmeResult.city, findmeResult.zip, findmeResult.timezone);
-            } else {
-                let errorMsg = '<p class="errormsg">Some thing went wrong</p>'
-                fineMeElement.html(errorMsg);
+            if (this.readyState == 4 && this.status == 200) {
+                let findmeResult = JSON.parse(this.responseText);
+                if (findmeResult.status == 'success') {
+                    findMeData(findmeResult.countryCode, findmeResult.country, findmeResult.regionName, findmeResult.region, findmeResult.city, findmeResult.zip, findmeResult.timezone);
+                    
+                } else {
+                    let errorMsg = '<p class="errormsg">Some thing went wrong</p>'
+                    fineMeElement.html(errorMsg);
+                }
             }
-        })
-
+           
+        }
+        
+        xhr.open(methodType,url,true);
+        xhr.send();
 
 
 
