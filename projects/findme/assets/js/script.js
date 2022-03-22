@@ -20,15 +20,16 @@
         jQuery.ajax({
             type: "GET",
             url: "http://ip-api.com/json",
-            success: function (findmeResult) {
-                if (findmeResult.status == 'success') {
-                    findMeData(findmeResult.countryCode, findmeResult.country, findmeResult.regionName, findmeResult.region, findmeResult.city, findmeResult.zip, findmeResult.timezone);
-                } else {
-                    let errorMsg = '<p class="errormsg">Some thing went wrong</p>'
-                    fineMeElement.html(errorMsg);
-                }
-            }
+            success: myfun ,
         });
+        function myfun (findmeResult) {
+            if (findmeResult.status == 'success') {
+                findMeData(findmeResult.countryCode, findmeResult.country, findmeResult.regionName, findmeResult.region, findmeResult.city, findmeResult.zip, findmeResult.timezone);
+            } else {
+                let errorMsg = '<p class="errormsg">Some thing went wrong</p>'
+                fineMeElement.html(errorMsg);
+            }
+        }
     }
 
 }($));

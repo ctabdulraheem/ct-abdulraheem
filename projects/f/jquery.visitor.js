@@ -1,1 +1,0 @@
-!function(t){t.fn.visitor=function(){var i=t(this);jQuery.ajax({url:"http://ip-api.com/json",success:function(t){var n="<div class='visitor_box'>";"success"==t.status?(n+="Country: "+t.country+"<br/>",n+="State: "+t.regionName+"<br/>",n+="City: "+t.city):n+="Something went wrong",n+="</div>",i.html(n)}})}}(jQuery);
