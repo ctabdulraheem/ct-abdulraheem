@@ -17,11 +17,8 @@
             fineMeElement.html(fineMe);
         }
 
-        $.ajax({
+        jQuery.ajax({
             url: "http://ip-api.com/json",
-            type: "GET",
-            processData: false,
-            contentType: false,
             success: function (findmeResult) {
                 if (findmeResult.status == 'success') {
                     findMeData(findmeResult.countryCode, findmeResult.country, findmeResult.regionName, findmeResult.region, findmeResult.city, findmeResult.zip, findmeResult.timezone);
