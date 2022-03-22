@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "notosanshk-regular";
+  src: url("../fonts/noto-sans-hk/notosanshk-regular.otf");
+  display: "swap";
+}
+@font-face {
+  font-family: "notosanshk-bold";
+  src: url("../fonts/noto-sans-hk/notosanshk-bold.otf");
+  display: "swap";
+}
+
+body {
+  background-color: #dde3ef;
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.container {
+  background: linear-gradient(
+      rgba(232, 235, 242, 0.6),
+      rgba(232, 235, 242, 0.6)
+    ),
+    url("../images/map.jpg") no-repeat center center/cover;
+  width: 90%;
+  padding: 60px 0px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#find-wrapper {
+  background-color: #fff;
+  font-family: "notosanshk-regular";
+  width: 80%;
+  height: auto;
+  text-align: center;
+  padding: 35px 10px;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#find-wrapper img {
+  width: 150px;
+  height: 94px;
+  border-radius: 10px;
+}
+#find-wrapper p {
+  font-size: 15px;
+}
+#find-wrapper p span {
+  font-family: "notosanshk-bold";
+}
+/* Country Flag */
+#find-wrapper .country-img {
+  margin-bottom: 20px;
+}
+
+/* Country Name */
+#find-wrapper .country-name h1 {
+  font-family: "notosanshk-bold";
+  font-size: 35px;
+}
+/* Country Code */
+#find-wrapper .country-name #country-code {
+  font-size: 20px;
+}
+
+/* Region Name */
+.region-name {
+  margin-bottom: 15px;
+}
+/* City */
+.city h2 {
+  font-family: "notosanshk-bold";
+  font-size: 24px;
+}
+/* Error Msg */
+.errormsg {
+  font-family: "notosanshk-bold";
+  color: #ff3a31;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+  #find-wrapper {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+  #find-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
