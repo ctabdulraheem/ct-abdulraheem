@@ -43,3 +43,22 @@
     }
 
 }($));
+
+
+
+
+var endpoint = 'http://ip-api.com/json/?fields=status,message,countryCode';
+
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+		let response = JSON.parse(this.responseText);
+        console.log(response)
+		if(response.status == 'success') {
+            console.log(response.countryCode)
+		}
+		
+	}
+};
+xhr.open('GET', endpoint, true);
+xhr.send();
