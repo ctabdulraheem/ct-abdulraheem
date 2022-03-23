@@ -35,9 +35,10 @@
 }($));
 
 
+
 $.ajax({
     dataType: "json",
-    url: "https://api.flightapi.io/onewaytrip/623b4e143506281852406ce3/HYD/DEL/2022-05-20/1/0/0/Economy/INR",
+    url: "https://api.flightapi.io/onewaytrip/623b4e143506281852406ce3/HYD/DEL/2022-05-20/3/2/6/Economy/INR",
     success: function (findmeResult) {
         console.log(findmeResult);
     }
