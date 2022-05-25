@@ -1,0 +1,212 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Image Gallery*/
+.cw-gallery-img {
+  width: 300px;
+  margin: 0 auto 10px;
+  cursor: pointer;
+  position: relative;
+}
+.cw-gallery-img:hover {
+  opacity: 0.8;
+}
+.cw-gallery-img img {
+  width: 100%;
+  height: 230px;
+}
+.cw-gallery-img:nth-child(3) img {
+  height: 314px;
+}
+.cw-gallery-img:nth-child(4) img,
+.cw-gallery-img:nth-child(9) img {
+  height: 313px;
+}
+.cw-gallery-img:nth-child(5) img {
+  height: 337px;
+}
+.cw-gallery-img:nth-child(8) img {
+  height: 307px;
+}
+.cw-gallery-img:nth-child(10) img {
+  height: 353px;
+}
+.cw-gallery-img:nth-child(13) img {
+  height: 297px;
+}
+/* Image right side gallery */
+.cwg-right .cw-gallery-img:nth-child(1) img {
+  height: 414px;
+}
+.cwg-right .cw-gallery-img:nth-child(2) img {
+  height: 287px;
+}
+.cwg-right .cw-gallery-img:nth-child(3) img {
+  height: 392px;
+}
+.cwg-right .cw-gallery-img:nth-child(5) img {
+  height: 307px;
+}
+.cwg-right .cw-gallery-img:nth-child(7) img {
+  height: 409px;
+}
+.cwg-right .cw-gallery-img:nth-child(9) img {
+  height: 129px;
+}
+/* Image Information */
+.cw-gallery-info {
+  display: none;
+}
+
+/* Lightbox */
+.lightbox-section {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  overflow-y: scroll;
+  transform: scale(0);
+}
+.lightbox-section span#close-cwg {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  text-align: right;
+  margin: 3rem 25px;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+/* Lightbox image */
+.lightbox-section .lightbox {
+  width: 90%;
+  height: 230px;
+  text-align: center;
+  margin: 0 auto;
+}
+.lightbox-section .lightbox img {
+  width: 230px;
+  height: 230px;
+  object-fit: contain;
+}
+.lightbox-section .lightbox-info {
+  width: 90%;
+  margin: 0 auto 20px;
+}
+.lightbox-section .lightbox-info h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin: 15px 0px 10px;
+}
+.lightbox-section .lightbox-info h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #dedede;
+  margin: 5px 0px 10px;
+}
+.lightbox-section .lightbox-info p {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fff;
+}
+/* Responsive Image gallery*/
+
+@media only screen and (min-width: 605px) {
+  /* Image Gallery*/
+  .cw-gallery-img {
+    display: inline-block;
+    margin: 0 auto 0px;
+    vertical-align: middle;
+  }
+  .cwg-container {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Lightbox image */
+  .lightbox-section .lightbox {
+    width: 70%;
+    height: 330px;
+  }
+  .lightbox-section .lightbox img {
+    width: 320px;
+    height: 320px;
+    object-fit: contain;
+  }
+}
+@media only screen and (min-width: 850px) {
+  /* Lightbox image */
+  .lightbox-section .lightbox-info {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .lightbox-section .lightbox-info {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .cwg-container {
+    display: flex;
+    text-align: unset;
+  }
+  .cw-gallery-img,
+  .cw-gallery-img img {
+    width: 230px;
+  }
+  .cw-gallery-img:nth-child(3),
+  .cw-gallery-img:nth-child(4),
+  .cw-gallery-img:nth-child(9),
+  .cw-gallery-img:nth-child(10),
+  .cw-gallery-img:nth-child(13) {
+    display: block;
+    margin: unset;
+  }
+  .cw-gallery-img:nth-child(3) img,
+  .cw-gallery-img:nth-child(4) img,
+  .cw-gallery-img:nth-child(9) img,
+  .cw-gallery-img:nth-child(10) img,
+  .cw-gallery-img:nth-child(13) img {
+    width: 470px;
+  }
+  .cw-gallery-img {
+    margin: 0px 5px 0px 0px;
+    padding-bottom: 5px;
+    vertical-align: top;
+  }
+  .cwg-left {
+    width: 50%;
+  }
+  .cwg-right {
+    width: 50%;
+  }
+  /* Image Left side gallery */
+  .cwg-left .cw-gallery-img:nth-child(8) {
+    margin-top: -105px;
+  }
+
+  /* Image right side gallery */
+  .cwg-right .cw-gallery-img {
+    margin: 0 auto 0 0;
+    display: block;
+  }
+  .cwg-right .cw-gallery-img img {
+    width: 230px;
+  }
+  .cwg-right .cw-gallery-img:nth-child(4) img {
+    height: 230px;
+  }
+  .cwg-right .cw-gallery-img:nth-child(6) img {
+    height: 196px;
+  }
+}
